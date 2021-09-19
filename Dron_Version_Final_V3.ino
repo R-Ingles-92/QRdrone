@@ -51,7 +51,7 @@ int mailSendVal=0;  //Variable para activar el envio del mail
  * 587 or esp_mail_smtp_port_587
 */
 #define smtpServerPort 465
-#define smtpServer "smtp.gmail.com"   //Gmail Simple Mail Transfer Protocol
+#define smtpServer "smtp.gmail.com"   //Protocolo simple de transferencia de correo de Gmail
 #define emailSubject "ESP32 Test Email with Attachments"  //Titulo del mail
 #define Mail_Button 12               // Boton para el envio del email (12)
 #define servoPin 13                 // Servo motor pin (13). Cable Naranja
