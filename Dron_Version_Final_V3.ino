@@ -242,8 +242,6 @@ void setupESP32Camera()
   //config.jpeg_quality = 4;
   //config.fb_count = 1;
 
-  // if PSRAM IC present, init with UXGA resolution and higher JPEG quality
-  // for larger pre-allocated frame buffer.
   if(psramFound())
     {
       config.frame_size = FRAMESIZE_UXGA;
@@ -315,7 +313,7 @@ void moveServo()
     MailEntrega();
     delay(500);
   }
-  else if (data1 != "mensajero"){
+  else if (data1 != "mensajero"){                     // Palabra clave
     //-----alarma3---------//
     digitalWrite(RedLed, HIGH);
     delay(2000);
